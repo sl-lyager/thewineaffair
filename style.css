@@ -1,9 +1,9 @@
 /* Variabler */
 html {
-  --color-page: #f7f7f7;
-  --color-surface: #fff;
-  --color-text: #222;
-  --color-muted: #666;
+  --color-page: #fafae1;
+  --color-surface: #fafae1;
+  --color-text: #ffffff;
+  --color-muted: #641432;
   --color-border: #d8d8d8;
   --space-05: 0.5rem;
   --space-1: 1rem;
@@ -251,3 +251,283 @@ main > * {
   color: inherit;
   text-decoration: none;
 }
+
+html {
+  --color-page: #fafae1;
+  --color-wine: #641432;
+  --color-gold: #e9a529;
+}
+
+body {
+  background: var(--color-page);
+}
+
+main > * {
+  grid-column: 1/-1;
+  padding: 0;
+}
+/*.    HERO SECTION.   */
+.hero-section {
+  position: relative;
+  margin: 0.5rem 1rem 0;
+  height: 550px;
+}
+
+.hero-section > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.logo {
+  position: absolute;
+  max-width: 634px;
+  left: 20px;
+  top: 40px;
+}
+
+/*.  EVVENT CARD.  */
+
+.event-card {
+  position: absolute;
+  right: 5%;
+  bottom: -80px;
+  width: 45%;
+  padding: 1.5rem;
+  border-radius: 22px;
+  background: var(--color-wine);
+  color: (white);
+
+  display: grid;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.event-details {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.book-button {
+  justify-self: end;
+  padding: 0.8rem 1.2rem;
+  background: var(--color-gold);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/*.    DISCOVERY_SECTION.  */
+.discovery-section {
+  position: relative;
+  min-height: 350px;
+  margin: 0.2rem;
+  margin-top: 2rem;
+}
+
+.text {
+  display: felx;
+  flex-direction: column;
+  gap: 10px;
+
+  color: var(--color-wine);
+  font-size: 2.4rem;
+  font-style: italic;
+
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+.table-illustation {
+  position: relative;
+  top: -500px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  bottom: 0;
+}
+
+.bottle-link {
+  position: absolute;
+  left: 22%;
+  top: 28%;
+  width: 600px;
+  height: 300px;
+}
+
+.bottle-link:hover > img {
+  position: inherit;
+  left: 20%;
+  top: 43%;
+
+  rotate: 90deg;
+}
+
+/*    ARTICLE CARDS. */
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+
+  width: 88%;
+  max-width: 1100px;
+
+  margin: -30rem auto 0;
+  padding: 0 0 5rem;
+}
+
+.article-section {
+  position: relative;
+  min-width: 0;
+}
+
+.card-content {
+  position: relative;
+  overflow: hidden;
+
+  aspect-ratio: 0.68;
+
+  border-radius: 22px;
+}
+
+.card-content > img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform o.4s;
+}
+
+.card-content:hover > img {
+  transform: scale(1.05);
+}
+
+.card-content h3 {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 2rem;
+
+  background: rgba(100, 20, 50, 0.78);
+  color: white;
+
+  font-family: "DM Serif Display", serif;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.card-content button {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  cursor: pointer;
+}
+
+.program-details[popover] {
+  position: fixed;
+
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+
+  width: min(90%, 600px);
+  max-height: 85vh;
+
+  padding: 1.5rem;
+  overflow-y: auto;
+
+  border: none;
+  border-radius: 20px;
+
+  background: var(--color-page);
+  color: var(--color-wine);
+
+  box-shadow: 0 5px 30px #0004;
+}
+
+.program-details > img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.program-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.program-content h2 {
+  color: var(--color-wine);
+}
+
+.program-content p {
+  color: var(--color-dark);
+}
+
+.program-content button {
+  justify-self: start;
+
+  padding: 0.7rem 1.3rem;
+
+  border: none;
+  border-radius: 25px;
+
+  background: var(--color-wine);
+  color: white;
+
+  cursor: pointer;
+}
+
+.program-details::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/*.     SVG.     */
+
+summary::marker{
+  content:none;
+}
+
+summary{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+summary::after{
+  content:"+";
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight:400;
+font-size:1.1rem;
+}
+
+:open summary::after{
+  content:"-";
+}
+
+/*html{
+  interpolate-size: allow-keywords;
+}
+
+::details-content{
+  height: 0;
+  overflow: clip;
+  transition: 0.3s;
+  transition-behavior: allow-discrete;
+}
+
+:open::details-contet{
+  height:auto;
+}*/
