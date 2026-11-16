@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="roedvinmenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560">
+  <g>
+    <rect x="168.78" y="94.78" width="348.31" height="352.81" rx="12.35" ry="12.35" fill="#e6e6bd"/>
+    <ellipse cx="345.79" cy="122.24" rx="101.73" ry="117.23" fill="#e6e6bd"/>
+    <ellipse cx="345.79" cy="416.52" rx="101.73" ry="117.23" fill="#e6e6bd"/>
+    <ellipse cx="260.76" cy="102.07" rx="65.05" ry="55.23" fill="#e6e6bd"/>
+    <ellipse cx="260.76" cy="442.18" rx="65.05" ry="55.23" fill="#e6e6bd"/>
+    <ellipse cx="427.87" cy="102.07" rx="65.05" ry="55.23" fill="#e6e6bd"/>
+    <ellipse cx="434.37" cy="437.58" rx="65.05" ry="55.23" fill="#e6e6bd"/>
+  </g>
+  <g>
+    <path d="M182.46,377.91V119.11c0-7.83,16.24-14.19,24.15-14.19" fill="#e6e6bd" stroke="#a65f63" stroke-miterlimit="10"/>
+    <path d="M479.97,104.92c7.91,0,23.44,6.35,23.44,14.19v258.8" fill="#e6e6bd" stroke="#a65f63" stroke-miterlimit="10"/>
+    <path d="M273.87,59.27c5.79-18.69,20.01-39.83,71.78-39.83s59.12,18.82,72.06,39.92" fill="#e6e6bd" stroke="#a65f63" stroke-miterlimit="10"/>
+    <path d="M206.62,104.92c0-29.05,34.07-45.65,67.17-45.65" fill="#e6e6bd" stroke="#a65f63" stroke-miterlimit="10"/>
+    <path d="M417.62,59.36c33.1,0,62.35,16.51,62.35,45.56" fill="#e6e6bd" stroke="#a65f63" stroke-miterlimit="10"/>
+    <g>
+      <path d="M182.46,159.83v258.8c0,7.83,16.24,14.19,24.15,14.19" fill="#e6e6bd" stroke="#a65f63" stroke-miterlimit="10"/>
+      <path d="M479.97,432.81c7.91,0,23.44-6.35,23.44-14.19V159.83" fill="#e6e6bd" stroke="#a65f63" stroke-miterlimit="10"/>
+      <path d="M273.87,478.47c5.79,18.69,20.01,39.83,71.78,39.83s59.12-18.82,72.06-39.92" fill="#e6e6bd" stroke="#a65f63" stroke-miterlimit="10"/>
+      <path d="M206.62,432.81c0,29.05,34.07,45.65,67.17,45.65" fill="#e6e6bd" stroke="#a65f63" stroke-miterlimit="10"/>
+      <path d="M417.62,478.37c33.1,0,62.35-16.51,62.35-45.56" fill="#e6e6bd" stroke="#a65f63" stroke-miterlimit="10"/>
+    </g>
+  </g>
+  <line x1="241.49" y1="157.31" x2="450.08" y2="157.3" fill="#a65f63" stroke="#a65f63" stroke-miterlimit="10"/>
+</svg>

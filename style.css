@@ -5,6 +5,7 @@ html {
   --color-text: #ffffff;
   --color-muted: #641432;
   --color-border: #d8d8d8;
+
   --space-05: 0.5rem;
   --space-1: 1rem;
   --space-2: 2rem;
@@ -75,10 +76,11 @@ main > * {
 }
 
 .form-intro {
-  display: grid;
-  gap: var(--space-1);
-  align-content: start;
-  max-width: 60ch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
 }
 
 .form-intro p {
@@ -220,9 +222,18 @@ main > * {
 }
 
 .form-placeholder {
+position:relative;
+z-index: 1;
+
+background-color: #fafae1;
+
+border-radius: 10px;
+padding: 40px;
+
+min-height: 0;
+
   min-height: -webkit-fill-available;
   min-height: stretch;
-  padding: var(--space-1);
 }
 
 /* Details */
@@ -496,6 +507,15 @@ main > * {
 
 /*.     SVG.     */
 
+.svg-page{
+  background-color: #A65F63;
+}
+
+.panel{
+  color:#e9a529;
+  background-color: #641432;
+}
+
 summary::marker{
   content:none;
 }
@@ -517,7 +537,7 @@ font-size:1.1rem;
   content:"-";
 }
 
-/*html{
+html{
   interpolate-size: allow-keywords;
 }
 
@@ -528,6 +548,455 @@ font-size:1.1rem;
   transition-behavior: allow-discrete;
 }
 
-:open::details-contet{
+details:open::details-content{
   height:auto;
-}*/
+}
+
+
+/*.      FORMULAR.    */
+
+.form-page{
+position: relative;
+
+margin:60px;
+padding: 60px;
+
+border-radius:15px;
+background-color: #641432;
+
+display:grid;
+grid-template-columns: 1fr 1fr;
+gap:3rem;
+
+align-items:center;
+}
+
+
+.form-placeholder fieldset{
+  margin: 0 0 24px;
+  padding:20px;
+
+  border: 1px solid #e9a529;
+  border-radius: 12px;
+  
+  display:grid;
+  gap:10px;
+  
+}
+
+.form-placeholder legend{
+padding:0 11px;
+
+color:#641432;
+font-family: serif;
+font-size: 1.25rem;
+  font-weight: bold;
+  
+  
+}
+
+.form-placeholder button{
+  cursor:pointer;
+  margin:10px;
+  padding-inline:20px;
+padding-block: 10px;
+
+  background-color: #641432;
+  border: 1px solid #641432;
+  border-radius: 10px;
+  
+  color: var(--color-page);
+  font-weight: bold;;
+}
+
+.form-placeholder label{
+  color: #641432;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.form-placeholder
+input:not([type="radio"]):not([type="checkbox"]):not([type="range"]),
+.form-placeholder select {
+  width: 100%;
+box-sizing:border-box;
+
+padding: 13px 16px;
+
+border: 1px solid #d8b77a;
+border-radius: 8px;
+
+background: #fffef5;
+color: #641432;
+
+font-size: 0.95rem;
+}
+
+.form-placeholder input:focus,
+.form-placeholder select:focus{
+  outline:2px solid #e9a529;
+  outline-offset:2px;
+}
+
+.form-placeholder input[type="radio"],
+.form-placeholder input[type="checkbox"]{
+  accent-color:var(--color-muted);
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.form-placeholder input[type="range"]{
+  width: 100%;
+  accent-color: var(--color-muted);
+}
+
+.form-placeholder button{
+  display: block;
+  width: 100%;
+
+  margin: 24px 0 0 16px;
+  padding: 16px;
+
+  background: #641432;
+  color: #fafae1;
+
+  border: 2px solid #641432;
+  border-radius: 30px;
+
+  font-size: 1.1rem;
+  font-weight: bold;
+
+  cursor:pointer;
+  transition: 0.3s ease;
+}
+
+.form-placeholder button:hover{
+  background-color: #e9a529;
+  color: #641432;
+  border-color: #e9a529;
+}
+
+input{
+  accent-color:#841A20;
+  border: solid 1px #64143161;
+  border-radius: 3px;
+}
+
+:focus-visible{
+  outline: 3px solid #841A20;
+  outline-offset:2px;
+}
+
+.class-message{
+  display:none;
+color:red;
+font-size: 0.85rem;
+margin-bottom: 5px;
+}
+
+.class-message.show{
+  display:block;
+}
+
+.vin-label{
+  position: relative;
+
+  width: min(100%,600px);
+  min-height: 900px;
+  margin-left: 0 auto;
+padding: 60px 55px;
+box-sizing:border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border:2px solid #e9a529;
+  border-radius: 48% 48% 20px 20px / 15% 15% 20px 20px;
+
+  background-color: #fafae1;
+  color: #641432;
+
+  box-shadow: 0 8px 25px #00000015;
+  transition: background-color 0.4s,color 0.4s;
+
+  transform:translateY(-200px);
+}
+
+.vin-label::before{
+  content:"";
+  position: absolute;
+  inset: 15px;
+
+  border: 1px solid #e9a529;
+  border-radius: 48% 48% 15px 15px / 15% 15% 15px 15px;
+
+  pointer-events: none;
+}
+
+/* tekst på mærkat. */
+.vin-label-content{
+  position: absolute;
+z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color:#641432;
+gap:0.8rem;
+
+width: 100%;
+gap:1.3rem;
+
+}
+
+.label-brand{
+  font-size:0.7rem;
+  letter-spacing:2px;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.vin-label-content h1{
+  font-family: serif;
+  font-size: 4rem;
+  font-style: italic;
+  color:#641432;
+  padding-bottom: 40px;
+}
+
+.vin-label-content h2{
+  font-family: serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.vin-label-content p{
+  width:80%;
+  color:#641432;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.vin-label-content .label-footer{
+  font-size:1.2rem;
+  letter-spacing:2px;
+  font-weight:bold;
+  padding-top: 110px;
+}
+
+.form-illustration{
+
+ position:absolute;
+
+ z-index: 3;
+
+ width: 670px;
+
+ left: 43%;
+ top: 66%;
+
+ transform: translate(-50%,-50%);
+
+ pointer-events:none;
+}
+
+/* OPSAMLINGSSIDE.   */
+
+/*. standardfarve. */
+.opsamling-placeholder{
+  background-color: #641432;
+  color: #fafae1;
+}
+
+
+/*. rødvin */
+.opsamling-placeholder[data-vin="rodvin"]{
+  background-color: #641432;
+}
+
+/*. Hvidvin. */
+.opsamling-placeholder[data-vin="hvidvin"]{
+  background-color: #e9d9a8;
+  color:#641432
+}
+
+/* Rosévin. */
+.opsamling-placeholder[data-vin="rosevin"]{
+  background-color:#A65F63;
+color:white;
+}
+
+/*.  LAYOUT.  */
+.opsamling-page{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.opsamling-intro{
+  text-align: center;
+  justify-items: center;
+}
+
+/*.  Selve vinetiketten. */
+.opsamling-placeholder{
+  position: relative;
+
+  width: min(100%,370px);
+  min-height: 570px;
+
+  padding:100px 35px 75px;
+
+  display: flex;
+  justify-content: center;
+
+  border:none;
+  border-radius: 48% 48% 20px 20px / 15% 15% 20px 20px;
+
+  background-color: #641432;
+  color: #fafae1;
+
+  box-shadow: 0 8px 25px #00000015;
+  transition: background-color 0.4s,color 0.4s;
+}
+
+/* invendig guldkant */
+.opsamling-placeholder::before{
+  content:"";
+
+  position:absolute;
+  inset:15px;
+
+  opacity: 0.45;
+  pointer-events:none;
+}
+
+/* INDHOLD. */
+.etiket-indhold{
+  position:relative;
+  z-index:1;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  gap: 1rem;
+}
+
+.etiket-overtekst,
+.lille-overskrift{
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+/* NAVN */
+.navn{
+  font-family: "DM Serif Display", serif;
+  font-size: 2.3rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.etiket-linje{
+  width: 65%;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.5;
+}
+
+/*.  eventinformation */
+.event-info{
+  display:grid;
+  gap:0.4rem;
+  font-size: 0.9rem;
+}
+
+/*.  Vin og niveau. */
+.vin-info{
+  display:grid;
+  gap:0.5rem;
+  margin-top: 0.5rem;
+}
+
+.vin-output{
+  font-family:"DM Serif Display",serif;
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.niveau-output{
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/*.  Forventninger */
+.forventninger{
+  display:grid;
+  gap:0.5rem;
+  margin-top: 0.5rem;
+}
+
+.forventninger-output{
+font-family: serif;
+font-size: 0.95rem;
+line-height: 1.6;
+}
+
+/*.   personlig profil. */
+.profil{
+  display:grid;
+  gap:0.5rem;
+  margin-top: 0.5rem;
+}
+
+.profil-output{
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Afslutning */
+.etiket-footer{
+  font-family: serif;
+  font-style: italic;
+  font-size:1rem;
+  margin-top: 0.5rem;
+}
+
+/*.  Farvetemaer. */
+.opsamling-placeholder[data-vin="rodvin"]{
+  background-color: #641432;
+  color: #fafae1;
+}
+
+.opsamling-placeholder[data-vin="hvidvin"]{
+  background-color:#e9e9bd;
+  color:#641432
+}
+
+.opsamling-placeholder[data-vin="rosevin"]{
+  background-color:#A65F63;
+  color:#641432;
+}
+
+/* MOBIL. */
+
+/* Opsamling MOBIL */
+@media (max-width: 600px){
+  .opsamling-placeholder{
+    width: min(100%, 340px);
+    min-height: 550px;
+    padding-inline: 30px;
+  }
+}
