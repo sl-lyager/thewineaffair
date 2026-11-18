@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 218.7 55.22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: Apple-Chancery, 'Apple Chancery';
+        font-size: 33.01px;
+      }
+
+      .cls-2 {
+        fill: #4a5e06;
+        stroke: #4a5e06;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="roedvin">
+    <text class="cls-1" transform="translate(14.44 29.51) scale(1.11 1)"><tspan x="0" y="0">Rødvin</tspan></text>
+  </g>
+  <g id="hvidvin">
+    <g>
+      <rect class="cls-2" x="206.39" y="26.61" width="17.12" height="6.5" transform="translate(244.81 -185.1) rotate(90)"/>
+      <rect class="cls-2" x="39.99" y="-35.19" width="50.41" height="129.4" transform="translate(94.71 -35.69) rotate(90)"/>
+      <path class="cls-2" d="M129.9,54.72c-13.37,0-26.98-11.29-26.98-25.21s13.61-25.21,26.98-25.21,21.43,11.29,21.43,25.21-8.06,25.21-21.43,25.21Z"/>
+      <rect class="cls-2" x="136.87" y="-44.81" width="13.31" height="149.35" transform="translate(173.39 -113.67) rotate(90)"/>
+    </g>
+    <text class="cls-1" transform="translate(9.6 39.8) scale(1.11 1)"><tspan x="0" y="0">Hvidvin</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 218.7 51.41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #841a20;
+        stroke: #841a20;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Apple-Chancery, 'Apple Chancery';
+        font-size: 33.01px;
+      }
+    </style>
+  </defs>
+  <g id="roedvin">
+    <g>
+      <rect class="cls-1" x="206.39" y="22.81" width="17.12" height="6.5" transform="translate(241.01 -188.9) rotate(90)"/>
+      <rect class="cls-1" x="39.99" y="-38.99" width="50.41" height="129.4" transform="translate(90.91 -39.49) rotate(90)"/>
+      <path class="cls-1" d="M129.9,50.91c-13.37,0-26.98-11.29-26.98-25.21S116.53.5,129.9.5s21.43,11.29,21.43,25.21-8.06,25.21-21.43,25.21Z"/>
+      <rect class="cls-1" x="136.87" y="-48.62" width="13.31" height="149.35" transform="translate(169.59 -117.47) rotate(90)"/>
+    </g>
+    <text class="cls-2" transform="translate(11.57 34.62) scale(1.11 1)"><tspan x="0" y="0">Rødvin</tspan></text>
+  </g>
+</svg>
