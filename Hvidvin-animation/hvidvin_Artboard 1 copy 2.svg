@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="roedvin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4a5e06;
+        stroke: #4a5e06;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M390.61,61.07c5.02,15.73-6.41,33.57-9.88,32.81-2.92-.64,2.47-13.87-4.89-31.3-3.34-7.91-8.16-13.96-5.98-16.52,1.73-2.02,6.61-.39,7.54-.08,9.2,3.07,12.78,13.75,13.21,15.09Z"/>
+</svg>

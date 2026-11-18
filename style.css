@@ -15,6 +15,43 @@ html {
 }
 
 /* Globalt layout */
+
+.pil {
+  max-height: 18rem;
+}
+.scroll-arrow {
+  animation: fadeArrow linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 150px;
+}
+
+@keyframes fadeArrow {
+  from {
+    opacity: 85%;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  }
+  to {
+    opacity: 1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+.scroll {
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: 50% 60%;
+}
+
 body {
   margin: 0;
   min-height: 100svh;
@@ -44,7 +81,7 @@ main > * {
 
 .svg-page {
   display: grid;
-  gap: var(--space-2);
+  gap: var(--space-1);
 }
 
 .svg-intro {
@@ -59,10 +96,10 @@ main > * {
 
 .svg-layout {
   display: grid;
-  gap: var(--space-2);
+  gap: 0;
   align-items: start;
   @media (width > 800px) {
-    grid-template-columns: 1fr min(40%, 36ch);
+    grid-template-columns: 1fr min(80%, 50ch);
   }
 }
 
@@ -205,12 +242,16 @@ main > * {
 .opsamling-placeholder {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
+
+  margin-left: 2rem;
 }
 
 .panel {
   padding: var(--space-1);
   display: grid;
   gap: var(--space-1);
+  margin-top: 1rem;
+  margin-right: 6rem;
 }
 
 .svg-placeholder,
@@ -237,8 +278,11 @@ main > * {
 }
 
 .accordion-item p {
-  padding: 0 var(--space-1) var(--space-1);
-  color: var(--color-muted);
+  padding: 0 var(--space-3) var(--space-3);
+  text-align: center;
+  padding-top: 2rem;
+}
+/*color: var(--color-text);/*
 }
 
 /* Knap/link */
@@ -496,25 +540,150 @@ main > * {
 
 /*.     SVG.     */
 
-summary::marker{
-  content:none;
+summary::marker {
+  content: none;
 }
 
-summary{
-  display:flex;
+summary {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-summary::after{
-  content:"+";
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight:400;
-font-size:1.1rem;
+summary::after {
+  content: "+";
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
-:open summary::after{
-  content:"-";
+:open summary::after {
+  content: "-";
+}
+
+.color1 {
+  background-color: #641432;
+  color: #fafae1;
+}
+.color2 {
+  background-color: #a65f63;
+  color: #fafae1;
+}
+.color3 {
+  background-color: #4a5e06;
+  color: #fafae1;
+}
+
+.gul {
+  background-color: #e6a632;
+}
+
+.sort {
+  color: #641432;
+}
+
+.rødvin {
+  padding: 1rem;
+}
+
+.svg1 {
+  height: 25rem;
+  position: absolute;
+  top: 39.5rem;
+  right: 8.5rem;
+}
+
+.svg2 {
+  height: 5rem;
+  position: absolute;
+  top: 15rem;
+  right: 25rem;
+}
+
+.svg3 {
+  height: 5.25rem;
+  position: absolute;
+  top: 22rem;
+  right: 25rem;
+}
+
+.svg4 {
+  height: 5rem;
+  position: absolute;
+  top: 8rem;
+  right: 25rem;
+}
+
+.svg-placeholder {
+  height: 62rem;
+  margin-bottom: 5rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-top: 1rem;
+}
+
+.vinflaske {
+  transition: transform 0.5s ease;
+}
+
+/* Rosévin */
+.svg2.pop {
+  transform: translateX(120px) scale(1.15);
+}
+
+/* Hvidvin */
+.svg3.pop {
+  transform: translateX(120px) scale(1.15);
+}
+
+/* Rødvin */
+.svg4.pop {
+  transform: translateX(120px) scale(1.15);
+}
+
+.vin-animation {
+  position: absolute;
+  top: -20 rem;
+  left: 5rem;
+
+  z-index: 10;
+}
+.vin-animation2 {
+  position: absolute;
+  top: -20 rem;
+  left: 3rem;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+.vin-animation3 {
+  position: absolute;
+  top: -20 rem;
+  left: 3rem;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.vin-animation {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.vin-animation.active {
+  opacity: 1;
 }
 
 /*html{

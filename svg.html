@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body class="gul">
   <header class="site-header">
     <div class="header-content">
       <a class="site-logo" href="./">Eventnavn</a>
@@ -27,21 +27,28 @@
   <main>
     <section class="svg-page">
       <header class="svg-intro">
-        <h1>Interaktiv SVG</h1>
-        <p>Indsæt din egen SVG og forbind den med punkterne nedenfor.</p>
       </header>
 
       <section class="svg-layout">
-        <div class="svg-placeholder"></div>
+        <div class="svg-placeholder">
+          <img class="vin-animation2" src="Hvidvin-animation/hvidvin_Artboard 1 copy.svg" alt="animation">
+          <img class="vin-animation" src="SVG_Animation/svg illustration_Artboard 1 copy.svg" alt="animation">
+          <img class="vin-animation3" src="Rosevin-animation/rosevin_Artboard 1 copy.svg" alt="animation">
+          <img class="svg1 vinflaske" src="SVG/asset_1.svg" alt="table">
+          <img class="svg2 vinflaske" src="SVG/Asset 3.svg" alt="rosé">
+          <img class="svg3 vinflaske" src="SVG/Asset 4.svg" alt="hvidvin">
+          <img class="svg4 vinflaske" src="SVG/Asset 5.svg" alt="rødvin">
+        </div>
 
         <article class="panel">
-          <h2>Vores udvalg</h2>
+          <h2 class="sort">Læs om vores udvalg her:</h2>
           <div class="accordion">
             <!-- TODO: Lav om til details/summary -->
-            <details open>
+            <details class="color1 rødvin">
               <summary>Rødvin</summary>
               <div class="accordion-item">
-                <p>Rødvin fremstilles af blå eller mørke druer, hvor drueskallerne får lov til at være med under
+                <p class="color1">Rødvin fremstilles af blå eller mørke druer, hvor drueskallerne får lov til at være
+                  med under
                   gæringen. Det er
                   skallerne, der giver vinen dens karakteristiske røde farve og tanniner. Rødvin findes i mange
                   forskellige smagsvarianter
@@ -51,10 +58,26 @@
               </div>
             </details>
 
-            <details open>
+            <details class="color2 rødvin">
+              <summary>Rosévin</summary>
+              <div class="accordion-item">
+                <p class="color2">Rosévin fremstilles oftest af blå druer, hvor drueskallerne kun er i kontakt med
+                  mosten i en kort
+                  periode. Det giver
+                  vinen dens smukke lyserøde farve, som kan variere fra lys rosa til dybere pink. Rosévin kombinerer
+                  ofte
+                  nogle af
+                  rødvinens frugtige aromaer med hvidvinens friske karakter. Smagen byder typisk på noter af jordbær,
+                  hindbær, vandmelon
+                  og fersken, hvilket gør den til en let og sommerlig vin.</p>
+              </div>
+            </details>
+
+            <details class="color3 rødvin">
               <summary>Hvidvin</summary>
               <div class="accordion-item">
-                <p>Hvidvin fremstilles typisk af grønne druer, hvor skallerne fjernes inden gæringen. Den er ofte kendt
+                <p class="color3">Hvidvin fremstilles typisk af grønne druer, hvor skallerne fjernes inden gæringen. Den
+                  er ofte kendt
                   for sin friske og
                   lette karakter, men kan også være fyldig og cremet afhængigt af druesort og fremstillingsmetode.
                   Hvidvin
@@ -63,20 +86,6 @@
                   eller
                   blomstrede
                   undertoner.</p>
-              </div>
-            </details>
-
-            <details open>
-              <summary>Rosévin</summary>
-              <div class="accordion-item">
-                <p>Rosévin fremstilles oftest af blå druer, hvor drueskallerne kun er i kontakt med mosten i en kort
-                  periode. Det giver
-                  vinen dens smukke lyserøde farve, som kan variere fra lys rosa til dybere pink. Rosévin kombinerer
-                  ofte
-                  nogle af
-                  rødvinens frugtige aromaer med hvidvinens friske karakter. Smagen byder typisk på noter af jordbær,
-                  hindbær, vandmelon
-                  og fersken, hvilket gør den til en let og sommerlig vin.</p>
               </div>
             </details>
           </div>
