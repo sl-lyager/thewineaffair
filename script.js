@@ -3,8 +3,8 @@ const svgPlaceholder = document.querySelector(".svg-placeholder");
 
 
  //     Forms.  
-const lokation=document.querySelector("#lokation")
-const dato=document.querySelector("#dato")
+const lokation=document.querySelector("#lokation");
+const dato=document.querySelector("#dato");
 
 const datoer={
   kbh:[
@@ -50,6 +50,8 @@ lokation.addEventListener("change", function(){
 // fejlbeskeder
 const form=document.querySelector(".form-placeholder");
 
+if(form){
+  
 const navn =document.querySelector("#navn");
 const email =document.querySelector("#email");
 const tlf =document.querySelector("#tlf");
@@ -104,7 +106,7 @@ form.addEventListener("submit",function(event){
   }
 
 });
-
+}
 
 // Opsamlingsside
 const opsamlingPlaceholder = document.querySelector(".opsamling-placeholder");
