@@ -461,17 +461,20 @@ main > * {
 .bottle-link {
   position: absolute;
   left: 22%;
-  top: 21%;
+  top: 20%;
   width: 600px;
   height: 300px;
 }
 
+
 .bottle-link:hover > img {
-  position: inherit;
   left: 20%;
   top: 43%;
 
-  rotate: 90deg;
+  transform:rotate(90deg);
+  transform-origin: bottom center;
+  transition: transform 0.5s ease;
+
 }
 
 /*. ARTICLE CARDS. */
@@ -1247,18 +1250,34 @@ input {
     flex-direction: column;
   }
 
+  .hero-section .logo{
+width: 80%;
+max-width:400px;
+height: auto;
+  }
+
+  .hero-section .logo-text{
+    font-size:6rem;
+    line-height: 1;
+    top: 13%;
+    left:38%;
+  }
+  
+  .hero-section .logo-text2{
+    font-size:5rem;
+    line-height:1;
+    top:18%;
+    left:11%;
+  }
+
+
   .hero-section img:first-child {
     height: 320px;
     width: 100%;
     object-fit: cover;
   }
 
-  .logo {
-    width: 60%;
-    max-width: 700px;
-    left: 1rem;
-    top: 1.5rem;
-  }
+  
 
   .event-card {
     position: relative;
@@ -1310,16 +1329,21 @@ input {
   }
 
   .bottle-link {
+
     width: 50%;
     height: auto;
     left: 27%;
-    top: 2%;
+    top: 0%;
   }
 
   .bottle-link img {
     width: 100%;
     height: auto;
+    transform-origin:center ;
+
   }
+
+
 
   .article-grid {
     grid-template-columns: 1fr;
