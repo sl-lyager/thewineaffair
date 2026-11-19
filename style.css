@@ -421,6 +421,7 @@ main > * {
   border-radius: 30px;
   text-decoration: none;
   font-size: 1.2rem;
+  z-index: 20;
 }
 
 /*.    DISCOVERY_SECTION.  */
@@ -466,15 +467,13 @@ main > * {
   height: 300px;
 }
 
-
 .bottle-link:hover > img {
   left: 20%;
   top: 43%;
 
-  transform:rotate(90deg);
+  transform: rotate(90deg);
   transform-origin: bottom center;
   transition: transform 0.5s ease;
-
 }
 
 /*. ARTICLE CARDS. */
@@ -615,6 +614,13 @@ main > * {
 .panel {
   background-color: #fafae1;
   border-radius: 10px;
+  @media (width < 800px) {
+    position: absolute;
+    top: 29rem;
+    left: 0.3rem;
+    width: 26rem;
+    border: none;
+  }
 }
 
 summary::marker {
@@ -675,6 +681,9 @@ summary::after {
 
 .rødvin {
   padding: 1rem;
+  @media (width < 800px) {
+    padding: 0.5rem;
+  }
 }
 
 .svg1 {
@@ -682,6 +691,11 @@ summary::after {
   position: absolute;
   top: 39.5rem;
   right: 8.5rem;
+  @media (width < 800px) {
+    height: 9rem;
+    top: 21.5rem;
+    left: 0.3rem;
+  }
 }
 
 .svg2 {
@@ -689,6 +703,11 @@ summary::after {
   position: absolute;
   top: 15rem;
   right: 25rem;
+  @media (width < 800px) {
+    height: 2.5rem;
+    left: -6rem;
+    top: 10rem;
+  }
 }
 
 .svg3 {
@@ -696,6 +715,11 @@ summary::after {
   position: absolute;
   top: 22rem;
   right: 25rem;
+  @media (width < 800px) {
+    height: 2.7rem;
+    left: -6rem;
+    top: 12.8rem;
+  }
 }
 
 .svg4 {
@@ -703,6 +727,11 @@ summary::after {
   position: absolute;
   top: 8rem;
   right: 25rem;
+  @media (width < 800px) {
+    height: 2.5rem;
+    left: -6rem;
+    top: 7rem;
+  }
 }
 
 .svg-placeholder {
@@ -711,8 +740,14 @@ summary::after {
   width: 50rem;
   margin-bottom: 5rem;
   margin-left: 7rem;
-
   margin-top: 1rem;
+  @media (width < 800px) {
+    height: 39rem;
+    width: 26rem;
+    margin: 0;
+    margin-left: 2.3rem;
+    margin-bottom: 26rem;
+  }
 }
 
 .vinflaske {
@@ -722,16 +757,25 @@ summary::after {
 /* Rosévin */
 .svg2.pop {
   transform: translateX(120px) scale(1.15);
+  @media (width < 800px) {
+    transform: translateX(30px) scale(1.15);
+  }
 }
 
 /* Hvidvin */
 .svg3.pop {
   transform: translateX(120px) scale(1.15);
+  @media (width < 800px) {
+    transform: translateX(30px) scale(1.15);
+  }
 }
 
 /* Rødvin */
 .svg4.pop {
   transform: translateX(120px) scale(1.15);
+  @media (width < 800px) {
+    transform: translateX(30px) scale(1.15);
+  }
 }
 
 .vin-animation {
@@ -1250,34 +1294,31 @@ input {
     flex-direction: column;
   }
 
-  .hero-section .logo{
-width: 80%;
-max-width:400px;
-height: auto;
+  .hero-section .logo {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
   }
 
-  .hero-section .logo-text{
-    font-size:6rem;
+  .hero-section .logo-text {
+    font-size: 6rem;
     line-height: 1;
     top: 13%;
-    left:38%;
-  }
-  
-  .hero-section .logo-text2{
-    font-size:5rem;
-    line-height:1;
-    top:18%;
-    left:11%;
+    left: 38%;
   }
 
+  .hero-section .logo-text2 {
+    font-size: 5rem;
+    line-height: 1;
+    top: 18%;
+    left: 11%;
+  }
 
   .hero-section img:first-child {
     height: 320px;
     width: 100%;
     object-fit: cover;
   }
-
-  
 
   .event-card {
     position: relative;
@@ -1329,7 +1370,6 @@ height: auto;
   }
 
   .bottle-link {
-
     width: 50%;
     height: auto;
     left: 27%;
@@ -1339,11 +1379,8 @@ height: auto;
   .bottle-link img {
     width: 100%;
     height: auto;
-    transform-origin:center ;
-
+    transform-origin: center;
   }
-
-
 
   .article-grid {
     grid-template-columns: 1fr;
