@@ -603,15 +603,15 @@ main > * {
   background: rgba(0, 0, 0, 0.55);
 }
 
-/**************************'SVG*****************************/
+/**************************SVG*****************************/
 
 .svg-page {
-  background-color: #a65f63;
+  background-color: #e6a632;
 }
 
 .panel {
-  color: #e9a529;
-  background-color: #641432;
+  background-color: #fafae1;
+  border-radius: 10px;
 }
 
 summary::marker {
@@ -649,14 +649,17 @@ summary::after {
 .color1 {
   background-color: #641432;
   color: #fafae1;
+  border-radius: 10px;
 }
 .color2 {
   background-color: #a65f63;
   color: #fafae1;
+  border-radius: 10px;
 }
 .color3 {
   background-color: #4a5e06;
   color: #fafae1;
+  border-radius: 10px;
 }
 
 .gul {
@@ -700,10 +703,12 @@ summary::after {
 }
 
 .svg-placeholder {
+  border-radius: 10px;
   height: 62rem;
+  width: 50rem;
   margin-bottom: 5rem;
   margin-left: 7rem;
-  margin-right: 7rem;
+
   margin-top: 1rem;
 }
 
