@@ -299,7 +299,6 @@ function afspilVin() {
     vinAnimation.src = vinFrames[frame];
 
     // Frame 1-13:
-    // Bevæg vinen fra 4rem til 12.25rem
     if (frame < bevægelsesFrames) {
       const progress = frame / (bevægelsesFrames - 1);
 
@@ -446,9 +445,7 @@ function afspilRosevin() {
   vinTimer = setTimeout(næsteFrame, 150);
 }
 
-// =====================================================
 // RØDVIN KNAP
-// =====================================================
 
 rødvinKnap.addEventListener("toggle", function () {
   if (this.open) {
@@ -475,9 +472,7 @@ rødvinKnap.addEventListener("toggle", function () {
   }
 });
 
-// =====================================================
 // HVIDVIN KNAP
-// =====================================================
 
 hvidvinKnap.addEventListener("toggle", function () {
   if (this.open) {
@@ -504,9 +499,7 @@ hvidvinKnap.addEventListener("toggle", function () {
   }
 });
 
-// =====================================================
 // ROSÉVIN KNAP
-// =====================================================
 
 rosevinKnap.addEventListener("toggle", function () {
   if (this.open) {
